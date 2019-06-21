@@ -1,0 +1,28 @@
+.divescuela{
+    width: 100% !important;
+    position: absolute;
+    top: 10%;
+}
+
+
+.divalumno{
+    width: 100% !important;
+    position: absolute;
+    bottom: 20%;
+}
+
+.divboton{
+    width: 100% !important;
+    position: absolute;
+    bottom: 0%;
+}
+
+.divchip{
+    display: inline-flex;
+    position: relative;
+    top: 20%;
+    right: 1%;
+}
+ion-chip:first-child{
+    right:1px;
+}
