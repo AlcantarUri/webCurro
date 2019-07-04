@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Informacion de Contacto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-label position="stacked">Nombre de calle</ion-label>
+        <ion-input required="true" [(ngModel)]="nombreCalle"></ion-input>
+      </ion-item>
+      
+      <ion-grid>
+          <ion-row>
+            <ion-col size="6">
+                <ion-item>
+                    <ion-label position="stacked">N° Exterior</ion-label>
+                    <ion-input required [(ngModel)]="numExterior"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col size="6">
+                <ion-item>
+                    <ion-label position="stacked">N° Interior</ion-label>
+                    <ion-input required [(ngModel)]="numInterior"></ion-input>
+                </ion-item>
+            </ion-col>
+          </ion-row>
+      </ion-grid>
+      <ion-item>
+          <ion-label position="stacked">Colonia ó Fraccionamiento</ion-label>
+          <ion-input [(ngModel)]="fraccionamiento"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label position="stacked">Codigo Postal</ion-label>
+          <ion-input type="number" [(ngModel)]="codigoPostal"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>Estado</ion-label>
+          <ion-select value="seleccione" okText="Okay" [(ngModel)]="estado" cancelText="Dismiss">
+              <ion-select-option value="seleccione">--Seleccione Estado--</ion-select-option>
+            <ion-select-option value="durango">Durango</ion-select-option>
+            <ion-select-option value="chiapas">Chiapas</ion-select-option>
+            <ion-select-option value="guadalajara">Guadalajara</ion-select-option>
+            <ion-select-option value="monterrey">Monterrey</ion-select-option>
+            <ion-select-option value="culiacan">Culiacan</ion-select-option>
+            <ion-select-option value="cdmx">CDMX</ion-select-option>
+            <ion-select-option value="yucatan">Yucatán</ion-select-option>
+          </ion-select>
+        </ion-item>
+      
+        
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-button shape="round" expand="block" (click)="regresaruno()">Regresar</ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button shape="round" expand="block" (click)="ultimoPaso()">Continuar</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

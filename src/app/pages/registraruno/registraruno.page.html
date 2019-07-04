@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Resgistrar Alumno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label position="stacked">Nombre(s)</ion-label>
+    <ion-input required="true" [(ngModel)]="nombreAlumno"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label position="stacked">Apellido Paterno</ion-label>
+      <ion-input required [(ngModel)]="apellidoPaterno"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label position="stacked">Apellido Materno</ion-label>
+      <ion-input [(ngModel)]="apellidoMaterno"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label position="stacked">Teléfono</ion-label>
+      <ion-input [(ngModel)]="telefono"></ion-input>
+  </ion-item>
+  
+  <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-button shape="round" expand="block" color="primary" (click)="retornologin()">Cancelar</ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button shape="round" expand="block" color="secondary" (click)="toRegistroDos()">Continuar</ion-button>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>

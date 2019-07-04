@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Clave de Escuela</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="divescuela">
+    <ion-item>
+        <ion-label position="stacked">Clave de Escuela</ion-label>
+        <div class="divchip">
+        <ion-input required [(ngModel)]="claveEscuela"></ion-input>
+          <div *ngIf="isEscuelaOk == false; else pagado">
+              
+                  <ion-icon name="close-circle" color="danger"></ion-icon>
+                  
+            </div>
+            <ng-template #pagado>
+                
+                    <ion-icon name="checkmark-circle" color="success"></ion-icon>
+                  
+            </ng-template>
+        </div>
+    </ion-item>
+    <ion-button shape="round" expand="block" color="secondary" (click)="verificarEscuela()">Verificar</ion-button>
+  </div>
+
+
+
+
+  <div class="divalumno" [hidden]="!isEscuelaOk">
+    <ion-item>
+        <ion-label position="stacked">Clave de Alumno</ion-label>
+        <div class="divchip">
+            <ion-input required [(ngModel)]="claveAlumno"></ion-input>
+              <div *ngIf="isAlumnoOk == false; else alumnoOk">
+                  
+                      <ion-icon name="close-circle" color="danger"></ion-icon>
+                  
+                </div>
+                <ng-template #alumnoOk>
+                    
+                        <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
+                    
+                </ng-template>
+            </div>
+    </ion-item>
+    <ion-button shape="round" expand="block" color="secondary" (click)="verificarAlumno()">Verificar</ion-button>
+  </div>
+
+  <div class="divboton">
+      <ion-button shape="round" [hidden]="!confirmado" expand="block" color="success" (click)="continuar()">Continuar</ion-button>
+  </div>
+</ion-content>
