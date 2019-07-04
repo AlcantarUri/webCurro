@@ -6,7 +6,10 @@ import { LoadingController } from '@ionic/angular';
 import { delay } from 'q';
 import { HttpService } from 'src/app/services/http.service';
 import { error } from 'util';
+<<<<<<< HEAD
 import { AuthService } from 'src/app/services/auth.service';
+=======
+>>>>>>> e4c8cf097a827c039b617ca71ddba3e036add2ae
 declare var google;
 
 @Component({
@@ -28,7 +31,10 @@ export class MapapruebaPage implements OnInit {
   lngInicial: any;
   latLong: any;
   cont: any=0;
+<<<<<<< HEAD
   usuario:string;
+=======
+>>>>>>> e4c8cf097a827c039b617ca71ddba3e036add2ae
 
   posMarkerInicial: Geoposition;
   posMarkerFinal: Geoposition;
@@ -36,13 +42,18 @@ export class MapapruebaPage implements OnInit {
       private geolocation: Geolocation,
       private nativeGeocoder: NativeGeocoder,
       private loadingCtrl: LoadingController,
+<<<<<<< HEAD
       private http: HttpService,
       private auth: AuthService
+=======
+      private http: HttpService
+>>>>>>> e4c8cf097a827c039b617ca71ddba3e036add2ae
   ) {
 
     this.medetengo = false;
     this.i = 0;
     
+<<<<<<< HEAD
     
     
    }
@@ -58,6 +69,16 @@ export class MapapruebaPage implements OnInit {
     
   }
   
+=======
+   }
+
+  ngOnInit() {
+    //this.ontas();
+    this.sacarCoordenadas();
+  }
+  
+  
+>>>>>>> e4c8cf097a827c039b617ca71ddba3e036add2ae
 
 
 async delay(ms: number) {
@@ -186,7 +207,11 @@ actualizaPosicion(lat: string, long: string){
   console.log(fechaCompletaUTC);
   //console.log(lat);
   //console.log(long);
+<<<<<<< HEAD
   this.http.actualizaUbicacion(this.usuario, fechaCompletaUTC, lat, long).then((inv)=>{
+=======
+  this.http.actualizaUbicacion("EscorpionDorado", fechaCompletaUTC, lat, long).then((inv)=>{
+>>>>>>> e4c8cf097a827c039b617ca71ddba3e036add2ae
     
     console.log("todo chido");
   },(error)=>{

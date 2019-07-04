@@ -5,7 +5,10 @@ import { NavController, ToastController, LoadingController, PopoverController} f
 import { LoadingOptions } from '@ionic/core';
 import { Router } from '@angular/router';
 import { delay, async } from 'q';
+<<<<<<< HEAD
 import { AuthService } from 'src/app/services/auth.service';
+=======
+>>>>>>> e4c8cf097a827c039b617ca71ddba3e036add2ae
 
 @Component({
   selector: 'app-login',
@@ -27,8 +30,12 @@ export class LoginPage implements OnInit {
     public toastCtrl : ToastController,
     public loadingCtrl : LoadingController,
     public router : Router,
+<<<<<<< HEAD
     public popover : PopoverController,
     public auth: AuthService
+=======
+    public popover : PopoverController
+>>>>>>> e4c8cf097a827c039b617ca71ddba3e036add2ae
   ) {
 
       this.loadingLogin = false;
@@ -204,10 +211,13 @@ export class LoginPage implements OnInit {
       console.log(error);
     })
   }
+<<<<<<< HEAD
   loginCognito(){
     this.auth.signIn(this.usuer, this.conprasena);
     
   }
+=======
+>>>>>>> e4c8cf097a827c039b617ca71ddba3e036add2ae
 
   loginChido(){
     console.log(this.usuer);
@@ -221,9 +231,12 @@ export class LoginPage implements OnInit {
     })
   }
 
+<<<<<<< HEAD
   validar(){
     this.router.navigateByUrl('validacion');
   }
 
+=======
+>>>>>>> e4c8cf097a827c039b617ca71ddba3e036add2ae
 
 }

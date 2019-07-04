@@ -1,8 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
+<<<<<<< HEAD
 <widget id="app.segura.siitecs" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>App Segura</name>
     <description>App Segura made by Uri Alcantar</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Uri Alcantar DP</author>
+=======
+<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>MyApp</name>
+    <description>An awesome Ionic/Cordova app.</description>
+    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+>>>>>>> e4c8cf097a827c039b617ca71ddba3e036add2ae
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

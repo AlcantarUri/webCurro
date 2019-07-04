@@ -11,7 +11,10 @@ const routes: Routes = [
   { path: 'registrardos', loadChildren: './pages/registrardos/registrardos.module#RegistrardosPageModule' },
   { path: 'verifica-usuario', loadChildren: './pages/verifica-usuario/verifica-usuario.module#VerificaUsuarioPageModule' },
   { path: 'registrartres', loadChildren: './pages/registrartres/registrartres.module#RegistrartresPageModule' },
+<<<<<<< HEAD
   { path: 'validacion', loadChildren: './pages/validacion/validacion.module#ValidacionPageModule' },
+=======
+>>>>>>> e4c8cf097a827c039b617ca71ddba3e036add2ae
 ];
 
 @NgModule({
